@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navigation">
+      <ul class="desktop-menu">
+        <li><a href="#raboti">работы</a></li>
+        <li><a href="#nachinki">начинки</a></li>
+        <li><a href="#kontakt">контакты</a></li>
+      </ul>
+      <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <section>
+      <div class="text1 animate-fadein">
+        <h1>Delicate Cake</h1>
+        <p>торты на заказ в Самаре</p>
+        <button class="conteiner-button"><a href="#kontakt">Заказать торт</a></button>
+      </div>
+
+      <div class="glav animate-fadein">
+        <img src="Group 1.png" alt="">
+      </div>
+    </section>
+  </header>
+
+  <div class="mobile-menu">
+    <button class="close-menu">
+      <i class="fas fa-times"></i>
+    </button>
+    <ul>
+      <li><a href="#raboti">Работы</a></li>
+      <li><a href="#nachinki">Начинки</a></li>
+      <li><a href="#kontakt">Контакты</a></li>
+    </ul>
+  </div>
+
+
+
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const closeMenu = document.querySelector('.close-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.add('open');
+    });
+
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+    });
+  </script>
+
+
+
+  <p><a name="raboti"></a></p>
+  <div class="grid">
+
+    <div class="items1">
+      <video autoplay muted>
+        <source src="document_5192825381685579651.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="items2">
+      <h2>Индивидуальный подход</h2>
+      <p>Учет всех ваших пожеланий: от дизайна до вкусовых предпочтений.</p>
+      <h2>Высокое качество ингредиентов</h2>
+      <p>Использование только свежих и натуральных продуктов (фермерские яйца, сливочное масло, ягоды по сезону и т.
+        д.).
+        Никаких консервантов, искусственных красителей или дешевых заменителей.</p>
+    </div>
+    <div class="items3"></div>
+    <div class="items4"></div>
+    <div class="items5">
+      <h2>Авторские рецепты и необычные вкусы</h2>
+      <p>Эксклюзивные комбинации (например, малина-базилик, соленая карамель-фисташка, чай матча-белый шоколад).</p>
+      <h2>Надежность и пунктуальность</h2>
+      <p>Доставка точно в срок, без задержек. Четкое соблюдение сроков изготовления даже при срочных заказах.</p>
+    </div>
+  </div>
+
+
+  <p><a name="nachinki"></a></p>
+  <h1>Начинки и стоимость</h1>
+  <div class="catalog">
+
+    <div class="card">
+      <div class="foto">
+        <img src="вишнявшоколаде.jpg" alt="">
+      </div>
+      <div class="opisanie">
+        <h1>Вишня<br> в шоколаде</h1>
+        <p>Шоколадный бисквит, вишневое конфи, ганаш на молочном шоколаде, сливочный крем</p>
+        <div class="zena">
+          <p>1800 руб/кг</p>
+          <img src="Vector 36.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="foto">
+        <img src="мангошоколад.png" alt="">
+      </div>
+      <div class="opisanie">
+        <h1>Манго<br>шоколад</h1>
+        <p>Шоколадный бисквит, манговый мусс, шоколадный ганаш, манговое конфи, сливочный крем</p>
+        <div class="zena">
+          <p>1800 руб/кг</p>
+          <img src="Vector 36.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="foto">
+        <img src="бананкарамель.jpg" alt="">
+      </div>
+      <div class="opisanie">
+        <h1>Банан<br>карамель</h1>
+        <p>Бисквит с бананом и грецким орехом, сливочный крем</p>
+        <div class="zena">
+          <p>1800 руб/кг</p>
+          <img src="Vector 36.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="foto">
+        <img src="сникерс.png" alt="">
+      </div>
+      <div class="opisanie">
+        <h1>Сникерс</h1>
+        <p>Шоколадный бисквит, карамель, арахис, шоколадный ганаш, сливочный крем</p>
+        <div class="zena">
+          <p>1900 руб/кг</p>
+          <img src="Vector 36.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="foto">
+        <img src="шоколадный.jpg" alt="">
+      </div>
+      <div class="opisanie">
+        <h1>Шоколадный</h1>
+        <p>Шоколадный бисквит, ганаш на молочном шоколаде</p>
+        <div class="zena">
+          <p>1800 руб/кг</p>
+          <img src="Vector 36.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="foto">
+        <img src="лавандачерника.png" alt="">
+      </div>
+      <div class="opisanie">
+        <h1>Лаванда<br>черника</h1>
+        <p>Лавандовые бисквиты, черничное конфи, сливочный крем</p>
+        <div class="zena">
+          <p>1800 руб/кг</p>
+          <img src="Vector 36.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="foto">
+        <img src="красныйбархат.jpg" alt="">
+      </div>
+      <div class="opisanie">
+        <h1>Красный<br> бархат</h1>
+        <p>Нежные бисквиты на сливочном масле, крем чиз</p>
+        <div class="zena">
+          <p>1900 руб/кг</p>
+          <img src="Vector 36.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="foto">
+        <img src="фисташкамалина.png" alt="">
+      </div>
+      <div class="opisanie">
+        <h1>Фисташка<br>малина</h1>
+        <p>Фисташковый бисквит, малиновое конфи, фисташковый ганаш, сливочный крем</p>
+        <div class="zena">
+          <p>2000 руб/кг</p>
+          <img src="Vector 36.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h1>Вопросы</h1>
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Какие виды десертов вы готовите?
+        <i class="fas fa-plus"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Есть широкий ассортимент десертов: торты, капкейки, пирожные, чизкейки. </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Можно ли заказать торт по индивидуальному дизайну?
+        <i class="fas fa-plus"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Да, конечно! Я создаю торты на любой вкус и повод – дни рождения, свадьбы, корпоративы и другие праздники.
+          Пришлите мне фото или описание вашей идеи, и я воплощу ее в жизнь!</p>
+      </div>
+
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Используете ли вы натуральные ингредиенты?
+        <i class="fas fa-plus"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Да, я работаю только с качественными и свежими продуктами: натуральное сливочное масло, свежие яйца,
+          фрукты, ягоды и премиальные сорта шоколада.</p>
+      </div>
+    </div>
+
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Как оформить заказ?
+        <i class="fas fa-plus"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Нужно:</p>
+        <ul>
+          <li>Ознакомиться с прайсом</li>
+          <li>Выбрать начинку</li>
+          <li>Рассчитать примерный вес(порция на одного человека 200г)</li>
+          <li>Опредилиться с дизайном и декором</li>
+          <li>Написать в любую социальнцю сеть, указанную в контактах</li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        За сколько дней нужно заказывать торт?
+        <i class="fas fa-plus"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Рекомендую оформлять заказ минимум за 3–5 дней (для простых тортов) и за 7–14 дней для сложных дизайнов
+          (особенно в праздничные дни).</p>
+      </div>
+    </div>
+
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Возможна ли доставка?
+        <i class="fas fa-plus"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Да, есть доставка заказов по городу и области с помощью служб доставок. Стоимость и сроки зависят от адреса.
+          Также возможен самовывоз .</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+        question.classList.toggle('active');
+        const answer = question.nextElementSibling;
+        if (answer.style.display === 'block') {
+          answer.style.display = 'none';
+        } else {
+          answer.style.display = 'block';
+        }
+      });
+    });
+  </script>
+
+
+
+  <p><a name="kontakt"></a></p>
+  <div class="kontakt">
+    <h1>Контакты</h1>
+    <p>Хотите сделать заказ или задать вопросы?<br>
+      Свяжитесь со мной</p>
+    <div class="soccety">
+      <div class="vk">
+        <a href="https://vk.com/delicatecake">
+        <img src="vk.svg" alt="">
+        </a>
+
+        <p>Вконтакте</p>
+      </div>
+      <div class="inst">
+        <a href="https://www.instagram.com/_delicate.cake_?igsh=MTV1NHQzejk1NWltNA==">
+
+        <img src="inst.svg" alt="">
+        </a>
+
+        <p>Инстаграм</p>
+      </div>
+      <div class="tg">
+        <a href="https://t.me/delicate_cakee">
+          <img src="tg.svg" alt="">
+        </a>
+
+        <p>Телеграм</p>
+      </div>
+
+    </div>
+    <p>Буду рада вашему заказу и помогу <br>
+      украсить любой праздник вкусным тортом!</p>
+  </div>
+
+</body>
+
+</html>
